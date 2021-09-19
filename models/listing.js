@@ -23,7 +23,7 @@ const commentSchema = new Schema({
     timestamps: true
 });
 
-const campsiteSchema = new Schema({
+const listingSchema = new Schema({
     name: {
         type: String,
         required: true,
@@ -55,6 +55,6 @@ const campsiteSchema = new Schema({
     timestamps: true
 });
 
-const Campsite = mongoose.model('Campsite', campsiteSchema);
+const Listing = mongoose.model('Listing', listingSchema);
 
-module.exports = Campsite;
+module.exports = Listing;
